@@ -1,6 +1,8 @@
 package com.example.hackathon;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,13 @@ public class LoginActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        TextView register = findViewById(R.id.register);
+
+        register.setOnClickListener(v -> {
+            Intent intent = new Intent(this, RegistrationActivity.class);
+            startActivity(intent);
+        });
+
     }
 }

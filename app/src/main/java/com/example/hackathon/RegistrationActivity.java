@@ -1,6 +1,8 @@
 package com.example.hackathon;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,18 @@ public class RegistrationActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button backButton = findViewById(R.id.backButton);
+        Button signUpButton = findViewById(R.id.signUpButton);
+
+        backButton.setOnClickListener(v -> {
+            finish();
+        });
+
+        signUpButton.setOnClickListener(v -> createAccount());
+    }
+
+    private void createAccount() {
+        EditText email = findViewById(R.id.email), password = findViewById(R.id.password), confirmPassword = findViewById(R.id.confirmPassword);
     }
 }
