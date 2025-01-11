@@ -1,6 +1,8 @@
 package com.example.hackathon;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,6 +23,13 @@ public class Rewards extends AppCompatActivity {
             return insets;
         });
 
+        ImageView imageView = findViewById(R.id.rewardsback);
 
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 }

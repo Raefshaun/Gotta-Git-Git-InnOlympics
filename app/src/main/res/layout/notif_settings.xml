@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/main">
 
-    >
     <ImageView
         android:id="@+id/notifback"
         android:layout_margin="10dp"
@@ -29,16 +29,16 @@
             android:columnCount="2"
             >
 
-        <TextView
-            android:layout_marginTop="35dp"
-            android:gravity="center"
-            android:layout_columnWeight="2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="@string/allow"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            />
+            <TextView
+                android:layout_marginTop="35dp"
+                android:gravity="center"
+                android:layout_columnWeight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/allow"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                />
 
             <ImageView
                 android:layout_width="0dp"

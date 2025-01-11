@@ -18,6 +18,7 @@
         android:paddingVertical="17dp">
 
         <ImageView
+            android:id="@+id/profileback"
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:src="@drawable/backarrow"/>
@@ -50,24 +51,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_marginRight="16dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="19"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:layout_gravity="center"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="reviews"
-                android:textSize="16sp"/>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -132,7 +115,7 @@
                         app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
-                        android:src="@drawable/bg"
+                        android:src="@drawable/placeholder"
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:layout_marginRight="16dp"/>
@@ -147,7 +130,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Titleadsf sdaf asdf dsaf fasdf sad sadf "
+                            android:text="Title"
                             android:maxLines="1"
                             android:ellipsize="end"
                             android:textStyle="bold"
@@ -156,7 +139,7 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Titleasdf asdf asdf sadf dsaf safd  asd fsda"
+                            android:text="description"
                             android:maxLines="1"
                             android:ellipsize="end"
                             android:textSize="16sp"/>
