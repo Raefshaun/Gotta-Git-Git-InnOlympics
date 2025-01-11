@@ -15,6 +15,7 @@
 
 
         <TextView
+            android:id="@+id/profile"
             android:layout_marginTop="160dp"
             android:layout_margin="10dp"
             android:layout_gravity="center_horizontal"
@@ -30,6 +31,7 @@
             />
 
     <TextView
+        android:id="@+id/notifications"
         android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="390dp"
@@ -44,6 +46,7 @@
         />
 
     <TextView
+        android:id="@+id/privacy"
         android:layout_margin="10dp"
         android:layout_gravity="center_horizontal"
         android:layout_width="390dp"

@@ -2,6 +2,7 @@ package com.example.hackathon;
 
 import android.content.Intent;
 import android.content.res.ColorStateList;
+import android.media.Image;
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -55,6 +56,11 @@ public class TransactionsActivity extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
 
             }
+        });
+
+        ImageView settings = findViewById(R.id.settings);
+        settings.setOnClickListener(v -> {
+            startActivity(new Intent(TransactionsActivity.this, SettingsActivity.class));
         });
     }
 }

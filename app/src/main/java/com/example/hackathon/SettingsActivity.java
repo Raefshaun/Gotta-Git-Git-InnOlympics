@@ -33,7 +33,7 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Intent to navigate to RewardsActivity
-                Intent intent = new Intent(SettingsActivity.this, RewardsActivity.class);
+                Intent intent = new Intent(SettingsActivity.this, Rewards.class);
                 startActivity(intent); // Start the activity
             }
         });

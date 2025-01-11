@@ -60,5 +60,10 @@ public class Homepage extends AppCompatActivity {
             startActivity(new Intent(Homepage.this, TransactionsActivity.class));
         });
 
+        ImageView settings = findViewById(R.id.settings);
+        settings.setOnClickListener(v -> {
+            startActivity(new Intent(Homepage.this, SettingsActivity.class));
+        });
+
     }
 }
