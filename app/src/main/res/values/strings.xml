@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Hackathon</string>
+    <string name="email">Email</string>
+    <string name="register_message"><u>Don\'t have an account? Register</u></string>
 </resources>
