@@ -1,36 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.viewpager.widget.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".TransactionsActivity">
 
-        <com.google.android.material.tabs.TabLayout
-            app:tabRippleColor="@color/main"
-            app:tabIndicatorColor="@color/main"
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lent"
-                />
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Borrowed"
-                />
+                android:background="@color/main"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="15dp"
+                android:paddingVertical="17dp">
 
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="To Rate"
-                />
-            
-        </com.google.android.material.tabs.TabLayout>
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:importantForAccessibility="no" />
 
-</androidx.viewpager.widget.ViewPager>
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/setting" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="800dp">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabIndicatorColor="@color/main"
+                    app:tabRippleColor="@color/main">
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lent" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Borrowed" />
+
+                    <com.google.android.material.tabs.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To Rate" />
+
+                </com.google.android.material.tabs.TabLayout>
+            </androidx.viewpager.widget.ViewPager>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="50dp"
+            android:paddingVertical="19dp">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/house" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/message" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/wallet"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/wallet" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
