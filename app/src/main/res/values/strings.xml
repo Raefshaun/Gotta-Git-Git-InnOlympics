@@ -2,4 +2,24 @@
     <string name="app_name">Hackathon</string>
     <string name="email">Email</string>
     <string name="register_message"><u>Don\'t have an account? Register</u></string>
+
+    <string name="edit">Edit</string>
+    <string name="save">Save</string>
+    <string name="profile">Profile</string>
+
+    <string name="profile_set">PROFILE SETTINGS</string>
+    <string name="notif">NOTIFICATIONS SETTINGS</string>
+    <string name="privacy">PRIVACY POLICY</string>
+
+    <string name="contact">Contact Us</string>
+
+    <string name="allow">ALLOW NOTIFICATIONS</string>
+    <string name="vibrate">VIBRATE</string>
+
+    <string name="post">POSTS</string>
+    <string name="reply">REPLIES</string>
+    <string name="msg">MESSAGES</string>
+    <string name="listing">LISTINGS</string>
+
+
 </resources>
