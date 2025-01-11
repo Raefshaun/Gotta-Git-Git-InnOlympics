@@ -1,6 +1,8 @@
 package com.example.hackathon;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,7 +23,9 @@ public class TransactionsActivity extends AppCompatActivity {
             return insets;
         });
 
-        // borrowed / lent
-        // ratings
+        ImageView home = findViewById(R.id.home);
+        home.setOnClickListener(v -> {
+            startActivity(new Intent(TransactionsActivity.this, Homepage.class));
+        });
     }
 }
