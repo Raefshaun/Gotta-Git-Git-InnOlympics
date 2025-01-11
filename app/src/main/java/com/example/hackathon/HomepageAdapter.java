@@ -22,7 +22,7 @@ public class HomepageAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         switch (position) {
             case 0:
-                return new listing();
+                return new home();
             case 1:
                 return new listing();
             default:
