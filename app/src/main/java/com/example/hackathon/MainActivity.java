@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
         else {
-            Toast.makeText(this, "Homepage dapat", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(this, Homepage.class);
+            startActivity(intent);
         }
     }
 }
