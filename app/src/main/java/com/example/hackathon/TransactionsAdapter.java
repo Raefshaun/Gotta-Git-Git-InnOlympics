@@ -25,8 +25,10 @@ public class TransactionsAdapter extends FragmentPagerAdapter {
                 return new LentFragment();
             case 1:
                 return new LentFragment();
+            case 2:
+                return new RateFragment();
             default:
-                return new LentFragment();
+                return null;
         }
     }
 
@@ -39,7 +41,7 @@ public class TransactionsAdapter extends FragmentPagerAdapter {
             case 1:
                 return "Borrowed";
             case 2:
-                return "Paid";
+                return "To Rate";
             default:
                 return null;
         }

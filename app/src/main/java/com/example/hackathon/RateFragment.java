@@ -1,5 +1,6 @@
 package com.example.hackathon;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -59,6 +61,39 @@ public class RateFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_rate, container, false);
+        View view = inflater.inflate(R.layout.fragment_rate, container, false);
+
+        LinearLayout rate1 = view.findViewById(R.id.rate1);
+        LinearLayout rate2 = view.findViewById(R.id.rate2);
+        LinearLayout rate3 = view.findViewById(R.id.rate3);
+        LinearLayout rate4 = view.findViewById(R.id.rate4);
+        LinearLayout rate5 = view.findViewById(R.id.rate5);
+
+        rate1.setOnClickListener(v -> {
+            Intent intent = new Intent(requireActivity(), Rating.class);
+            startActivity(intent);
+        });
+
+        rate2.setOnClickListener(v -> {
+            Intent intent = new Intent(requireActivity(), Rating.class);
+            startActivity(intent);
+        });
+
+        rate3.setOnClickListener(v -> {
+            Intent intent = new Intent(requireActivity(), Rating.class);
+            startActivity(intent);
+        });
+
+        rate4.setOnClickListener(v -> {
+            Intent intent = new Intent(requireActivity(), Rating.class);
+            startActivity(intent);
+        });
+
+        rate5.setOnClickListener(v -> {
+            Intent intent = new Intent(requireActivity(), Rating.class);
+            startActivity(intent);
+        });
+
+        return view;
     }
 }
