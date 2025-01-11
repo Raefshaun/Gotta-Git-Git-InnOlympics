@@ -52,7 +52,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         // Set onClickListener for the notification button
         notificationTextView.setOnClickListener(view -> {
-            Intent intent = new Intent(SettingsActivity.this, NotificationActivity.class);
+            Intent intent = new Intent(SettingsActivity.this, Notifications.class);
             startActivity(intent);
         });
 
