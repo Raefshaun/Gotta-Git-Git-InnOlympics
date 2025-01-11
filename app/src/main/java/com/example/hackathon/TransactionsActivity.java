@@ -1,6 +1,7 @@
 package com.example.hackathon;
 
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -9,6 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class TransactionsActivity extends AppCompatActivity {
 
@@ -26,6 +30,31 @@ public class TransactionsActivity extends AppCompatActivity {
         ImageView home = findViewById(R.id.home);
         home.setOnClickListener(v -> {
             startActivity(new Intent(TransactionsActivity.this, Homepage.class));
+        });
+
+        TabLayout tabLayout = findViewById(R.id.tabLayout);
+        ViewPager view = findViewById(R.id.pager);
+
+        final TransactionsAdapter transactionsAdapter = new TransactionsAdapter(this, getSupportFragmentManager(), tabLayout.getTabCount());
+        view.setAdapter(transactionsAdapter);
+
+        view.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
+        tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                view.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
+
+            }
         });
     }
 }

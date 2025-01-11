@@ -1,5 +1,6 @@
 package com.example.hackathon;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.widget.Button;
@@ -71,7 +72,7 @@ public class RegistrationActivity extends AppCompatActivity {
                         finish();
                     }
                     else {
-                        Toast.makeText(this, "Authentication failed.", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(this, Homepage.class);
                     }
                 });
     }
