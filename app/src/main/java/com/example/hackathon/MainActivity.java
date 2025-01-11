@@ -3,6 +3,7 @@ package com.example.hackathon;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -36,10 +37,13 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onStart() {
         super.onStart();
-        // Check if user is signed in.
         FirebaseUser currentUser = mAuth.getCurrentUser();
         if (currentUser == null) {
             Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        }
+        else {
+            Intent intent = new Intent(this, Homepage.class);
             startActivity(intent);
         }
     }

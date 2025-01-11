@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:fillViewport="true"
-    android:orientation="vertical">
+    tools:context=".Homepage">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -52,24 +54,15 @@
             </LinearLayout>
 
             <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
                 android:layout_width="match_parent"
                 android:layout_height="1000dp">
 
                 <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    app:tabTextColor="@color/black"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-
-                    <com.google.android.material.tabs.TabItem
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="Your Feed"
-                        />
-
-                    <com.google.android.material.tabs.TabItem
-                        android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="Your Listings"
-                        />
 
                 </com.google.android.material.tabs.TabLayout>
 
@@ -78,17 +71,6 @@
 
         </LinearLayout>
     </ScrollView>
-
-    <FrameLayout
-        android:id="@+id/feed"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <fragment
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:name="com.example.hackathon.home"/>
-
-    </FrameLayout>
 
 
     <!--home buttons-->
@@ -119,16 +101,6 @@
             <ImageView
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/add" />
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="1dp"
-                android:layout_weight="1" />
-
-            <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
                 android:src="@drawable/message" />
 
             <Space
@@ -142,4 +114,5 @@
                 android:src="@drawable/wallet" />
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
