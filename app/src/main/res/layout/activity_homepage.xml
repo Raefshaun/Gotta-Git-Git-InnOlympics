@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:orientation="vertical">
+    tools:context=".Homepage">
+
     <ScrollView
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -46,64 +50,34 @@
                         android:src="@drawable/setting" />
                 </LinearLayout>
 
+
             </LinearLayout>
-            <!--posts-->
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:gravity="center_vertical"
-                android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp">
 
-                    <ImageView
-                        android:layout_width="45dp"
-                        android:layout_height="45dp"
-                        android:src="@drawable/circle" />
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabLayout"
+                    app:tabTextColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    <TextView
-                        android:layout_width="300dp"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginLeft="5dp"
-                        android:text="Client Name"
-                        android:textAppearance="@color/black"
-                        android:textSize="22dp"/>
-                </LinearLayout>
+                </com.google.android.material.tabs.TabLayout>
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="-15dp"
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginBottom="5dp"
-                    android:text="Prompt"
-                    android:textSize="17dp"/>
+            </androidx.viewpager.widget.ViewPager>
 
-                <ImageView
-                    android:layout_marginLeft="50dp"
-                    android:layout_marginTop="5dp"
-                    android:layout_width="25dp"
-                    android:layout_height="25dp"
-                    android:src="@drawable/comment"
-                    />
-            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
+
 
     <!--home buttons-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -120,10 +94,9 @@
                 android:src="@drawable/house" />
 
             <Space
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                />
+                android:layout_weight="1" />
 
             <ImageView
                 android:layout_width="25dp"
@@ -131,10 +104,9 @@
                 android:src="@drawable/message" />
 
             <Space
-                android:layout_weight="1"
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                />
+                android:layout_weight="1" />
 
             <ImageView
                 android:layout_width="25dp"
@@ -142,4 +114,5 @@
                 android:src="@drawable/wallet" />
         </LinearLayout>
     </LinearLayout>
+
 </LinearLayout>
