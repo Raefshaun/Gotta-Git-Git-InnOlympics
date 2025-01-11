@@ -16,7 +16,7 @@ public class NotificationActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.settings);
 
-        ImageView imageView = findViewById(R.id.notifback);
+        ImageView imageView = findViewById(R.id.settingsback);
 
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override

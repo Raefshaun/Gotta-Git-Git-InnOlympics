@@ -22,9 +22,8 @@ public class SettingsActivity extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SettingsActivity.this, HomeActivity.class);
+                Intent intent = new Intent(SettingsActivity.this, Homepage.class);
                 startActivity(intent);
-                finish();
             }
         });
 
@@ -37,11 +36,16 @@ public class SettingsActivity extends AppCompatActivity {
                 startActivity(intent); // Start the activity
             }
         });
-    }
 
-    // OnClick method for the "Profile Settings" TextView
-    public void onProfileSettingsClick(View view) {
-        Intent intent = new Intent(SettingsActivity.this, ProfileActivity.class);
-        startActivity(intent);
+        rewardsTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Intent to navigate to RewardsActivity
+                Intent intent = new Intent(SettingsActivity.this, ProfileActivity.class);
+                startActivity(intent); // Start the activity
+            }
+        });
     }
 }
+
+
