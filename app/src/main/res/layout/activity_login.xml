@@ -45,7 +45,8 @@
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:backgroundTint="#F47E3E"
+            android:backgroundTint="@color/main"
+            android:textColor="@color/white"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

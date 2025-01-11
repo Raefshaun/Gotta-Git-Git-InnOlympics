@@ -8,8 +8,8 @@
     tools:context=".TransactionsActivity">
 
         <com.google.android.material.tabs.TabLayout
-            app:tabRippleColor="@color/primary"
-            app:tabIndicatorColor="@color/primary"
+            app:tabRippleColor="@color/main"
+            app:tabIndicatorColor="@color/main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             

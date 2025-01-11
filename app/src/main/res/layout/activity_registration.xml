@@ -50,8 +50,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:textColor="@color/white"
             android:background="@drawable/rounded_corner_no_bg"
-            android:backgroundTint="#F47E3E"
+            android:backgroundTint="@color/main"
             android:text="Sign Up"
             android:textSize="16dp" />
 
