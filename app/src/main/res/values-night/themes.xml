@@ -8,4 +8,8 @@
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">5%</item>
     </style>
+    <style name="SmallRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="android:minHeight">16dp</item> <!-- Adjust height -->
+        <item name="android:maxHeight">16dp</item> <!-- Adjust height -->
+    </style>
 </resources>
