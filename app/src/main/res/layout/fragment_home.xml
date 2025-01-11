@@ -48,6 +48,7 @@
 
             </LinearLayout>
             <!--posts-->
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -95,6 +96,7 @@
                     />
             </LinearLayout>
 
+
         </LinearLayout>
     </ScrollView>
 
@@ -118,6 +120,17 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/house" />
+
+            <Space
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/add" />
 
             <Space
                 android:layout_weight="1"
