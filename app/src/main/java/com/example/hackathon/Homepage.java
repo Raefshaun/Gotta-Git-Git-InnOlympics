@@ -1,7 +1,9 @@
 package com.example.hackathon;
 
+import android.content.Intent;
 import android.content.res.ColorStateList;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -51,6 +53,11 @@ public class Homepage extends AppCompatActivity {
             public void onTabReselected(TabLayout.Tab tab) {
 
             }
+        });
+
+        ImageView transactions = findViewById(R.id.wallet);
+        transactions.setOnClickListener(v -> {
+            startActivity(new Intent(Homepage.this, TransactionsActivity.class));
         });
 
     }
