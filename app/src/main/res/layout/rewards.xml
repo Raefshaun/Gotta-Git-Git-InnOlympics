@@ -49,11 +49,12 @@
             android:layout_marginBottom="8dp"/>
 
         <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
             android:id="@+id/starProgressBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:max="100"
-            android:progress="0"
+            android:progress="74"
             android:indeterminate="false"/>
 
         <TextView
@@ -121,6 +122,40 @@
                     android:src="@drawable/gift_card"
                     android:layout_gravity="center"
                     />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/og_gc"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/grab_gc"
+                    android:layout_gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/gcash_gc"
+                    android:layout_gravity="center"
+                    />
+
+
+                <ImageView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="350dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/smart_gc"
+                    android:layout_gravity="center"
+                    />
+
 
             </LinearLayout>
 

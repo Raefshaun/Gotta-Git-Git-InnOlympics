@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    android:layout_height="match_parent"
+    tools:context=".AddFeed">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/back_settings"
+            />
+
+        <TextView
+            android:layout_marginStart="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Post"
+            android:textSize="30dp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:hint="Enter Item"
+        android:padding="8dp"
+        android:gravity="top"
+        android:background="@drawable/login_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:hint="Enter Message"
+        android:padding="8dp"
+        android:gravity="top"
+        android:background="@drawable/login_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/main"
+        android:text="Add"
+        android:textColor="@color/white"
+        />
+
+</LinearLayout>

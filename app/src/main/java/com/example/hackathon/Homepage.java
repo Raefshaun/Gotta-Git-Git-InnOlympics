@@ -15,6 +15,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.tabs.TabLayout;
 
 public class Homepage extends AppCompatActivity {
+    int addMethod = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,8 @@ public class Homepage extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 view.setCurrentItem(tab.getPosition());
+                addMethod = tab.getPosition();
+
             }
 
             @Override
@@ -66,6 +69,25 @@ public class Homepage extends AppCompatActivity {
             startActivity(new Intent(Homepage.this, SettingsActivity.class));
             this.overridePendingTransition(0, 0);
         });
+
+        ImageView add = findViewById(R.id.add);
+        add.setOnClickListener(v -> {
+
+            switch (addMethod) {
+                case 0:
+                    startActivity(new Intent(Homepage.this, AddFeed.class));
+                    this.overridePendingTransition(0, 0);
+                    break;
+                case 1:
+                    startActivity(new Intent(Homepage.this, AddActivity.class));
+                    this.overridePendingTransition(0, 0);
+                    break;
+            }
+
+            this.overridePendingTransition(0, 0);
+        });
+
+        ImageView messaging = findViewById(R.id.messaging);
 
     }
 }
