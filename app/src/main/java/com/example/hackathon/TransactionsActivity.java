@@ -31,6 +31,8 @@ public class TransactionsActivity extends AppCompatActivity {
         ImageView home = findViewById(R.id.home);
         home.setOnClickListener(v -> {
             startActivity(new Intent(TransactionsActivity.this, Homepage.class));
+            this.overridePendingTransition(0, 0);
+
         });
 
         TabLayout tabLayout = findViewById(R.id.tabLayout);
@@ -61,6 +63,7 @@ public class TransactionsActivity extends AppCompatActivity {
         ImageView settings = findViewById(R.id.settings);
         settings.setOnClickListener(v -> {
             startActivity(new Intent(TransactionsActivity.this, SettingsActivity.class));
+            this.overridePendingTransition(0, 0);
         });
     }
 }
