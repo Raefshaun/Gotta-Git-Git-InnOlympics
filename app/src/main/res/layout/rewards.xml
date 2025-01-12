@@ -91,7 +91,7 @@
             android:layout_height="wrap_content"
             android:text="Claim Voucher"
             android:textColor="@android:color/white"
-            android:background="@color/main"
+            android:backgroundTint="@color/main"
             android:layout_marginTop="16dp"/>
 
     </LinearLayout>
