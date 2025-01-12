@@ -52,7 +52,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         // Set onClickListener for the notification button
         notificationTextView.setOnClickListener(view -> {
-            Intent intent = new Intent(SettingsActivity.this, NotificationActivity.class);
+            Intent intent = new Intent(SettingsActivity.this, Notifications.class);
             startActivity(intent);
         });
 
@@ -68,9 +68,8 @@ public class SettingsActivity extends AppCompatActivity {
 
         AlertDialog dialog = builder.create();
 
-        // Close button in privacy policy dialog
-//        Button closeButton = dialogView.findViewById(R.id.closeButton);
-//        closeButton.setOnClickListener(view -> dialog.dismiss());
+        Button closeButton = dialogView.findViewById(R.id.closeButton);
+        closeButton.setOnClickListener(view -> dialog.dismiss());
 
         dialog.show();
     }
