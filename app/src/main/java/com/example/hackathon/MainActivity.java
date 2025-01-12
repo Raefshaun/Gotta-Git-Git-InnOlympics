@@ -31,22 +31,22 @@ public class MainActivity extends AppCompatActivity {
         });
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
-        mAuth = FirebaseAuth.getInstance();
-//        Intent intent = new Intent(this, Homepage.class);
-//        startActivity(intent);
+//        mAuth = FirebaseAuth.getInstance();
+        Intent intent = new Intent(this, Homepage.class);
+        startActivity(intent);
     }
 
     @Override
     public void onStart() {
         super.onStart();
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser == null) {
-            Intent intent = new Intent(this, LoginActivity.class);
-            startActivity(intent);
-        }
-        else {
-            Intent intent = new Intent(this, Homepage.class);
-            startActivity(intent);
-        }
+//        FirebaseUser currentUser = mAuth.getCurrentUser();
+//        if (currentUser == null) {
+//            Intent intent = new Intent(this, LoginActivity.class);
+//            startActivity(intent);
+//        }
+//        else {
+//            Intent intent = new Intent(this, Homepage.class);
+//            startActivity(intent);
+//        }
     }
 }

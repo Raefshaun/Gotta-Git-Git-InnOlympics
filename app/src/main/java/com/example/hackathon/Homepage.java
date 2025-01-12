@@ -87,5 +87,7 @@ public class Homepage extends AppCompatActivity {
             this.overridePendingTransition(0, 0);
         });
 
+        ImageView messaging = findViewById(R.id.messaging);
+
     }
 }
