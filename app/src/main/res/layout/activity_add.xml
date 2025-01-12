@@ -20,6 +20,7 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/back_settings"
+            android:id="@+id/backButton"
             />
 
         <TextView
