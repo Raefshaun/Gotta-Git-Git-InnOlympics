@@ -1,6 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@android:color/white">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy Policy"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome to our marketplace for selling and renting school supplies for college students in the university belt of the Philippines.\n\nWe are committed to protecting your personal information and respecting your privacy. This Privacy Policy explains how we collect, use, and share your data when you use our platform.\n\n
+
+1. *Information We Collect*:\n
+   - Personal information like name, email, contact number, and address.\n
+   - Payment details for purchases and rentals.\n
+   - Usage data for improving the platform.\n\n
+
+2. *How We Use Your Information*:\n
+   - To process transactions and rentals.\n
+   - To communicate with you about updates and offers.\n
+   - To enhance user experience and platform security.\n\n
+
+3. *Data Sharing*:\n
+   - We do not share your information with third parties unless required by law or to fulfill platform services.\n\n
+4. *Your Rights*:\n
+   - You can access, update, or delete your information at any time by contacting support.\n\n
+5. *Security*:\n
+   - We use encryption and other security measures to protect your data.\n\n
+
+For more information, contact us at support@marketplace.ph."
+            android:lineSpacingExtra="4dp"
+            android:paddingBottom="16dp" />
+
+        <Button
+            android:id="@+id/closeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Close"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/main"/>
+    </LinearLayout>
+</ScrollView>
