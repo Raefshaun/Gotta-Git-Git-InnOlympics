@@ -88,6 +88,12 @@ public class Homepage extends AppCompatActivity {
         });
 
         ImageView messaging = findViewById(R.id.messaging);
+        messaging.setOnClickListener(v -> {
+            Intent intent = new Intent(this, messaging.class);
+            startActivity(intent);
+            this.overridePendingTransition(0, 0);
+        });
+
 
     }
 }

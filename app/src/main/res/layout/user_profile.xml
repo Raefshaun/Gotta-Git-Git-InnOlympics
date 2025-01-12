@@ -129,6 +129,17 @@
                 android:layout_gravity="center_horizontal"
                 android:visibility="gone"
                 />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="70dp"
+                android:layout_marginTop="20dp"
+                android:text="Log Out"
+                android:backgroundTint="@color/design_default_color_error"
+                android:textColor="@color/white"
+                android:id="@+id/logout"
+                />
         </LinearLayout>
 
     </ScrollView>
